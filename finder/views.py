@@ -2,6 +2,14 @@ from django.shortcuts import render
 
 # Create your views here.
 
+def map (request):
+	return render (request,'finder/maps.html')
+
+def diseases (request):
+	return render (request,'finder/diseases/diseases.html')
+
+def home (request):
+	return render (request,'finder/doctor/home.html')
 
 def index (request):
 	return render (request,'finder/patient/index.html')
