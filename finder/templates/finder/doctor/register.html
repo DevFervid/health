@@ -1,0 +1,122 @@
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <title>Log IN</title>
+  <link rel="stylesheet" type="text/css" href="{%static 'finder/css/styles.css' %}">
+  <link rel="stylesheet" type="text/css" href="{%static 'finder/css/bootstrap.min.css' %}">
+  <link href="{% static 'finder/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+      <div class="card card-register mx-auto mt-5">
+        <div class="card-header">Register as a Doctors</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
+                    <label for="firstName">First name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
+                    <label for="lastName">Last name</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="inputPhonenumber" class="form-control" placeholder="077777777" required="required">
+                <label for="inputPhonenumber">Phone Number</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+                    <label for="inputPassword">Password</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required="required">
+                    <label for="confirmPassword">Confirm password</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="Profession" class="form-control" placeholder="Surgen" required="required">
+                <label for="Profession">Profession</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="inputAge" class="form-control" placeholder="eg.34" required="required">
+                    <label for="inputAge">Age</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="id" class="form-control" placeholder="121232" required="required">
+                    <label for="id">ID</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="inputAddress" class="form-control" placeholder="Address" required="required">
+                    <label for="inputAddress">Address</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="zipcode" class="form-control" placeholder="zipcode" required="required">
+                    <label for="zipcode">Zipcode</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="city" class="form-control" placeholder="Nairobi" required="required">
+                    <label for="inputCity">City</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="country" class="form-control" placeholder="Kenya" required="required">
+                    <label for="inputCountry">Country</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-block" href="login.html">Register</a>
+          </form>
+          <div class="text-center">
+            <a class="d-block small mt-3" href="login.html">Login Page</a>
+            <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{%static 'finder/static/finder/jquery.min.js' %}"></script>
+  <script src="{%static 'finder/static/finder/bootstrap.min.js' %}"></script>
+     </body>
+     </html>

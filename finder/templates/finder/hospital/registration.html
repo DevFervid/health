@@ -1,0 +1,113 @@
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="{%static 'finder/css/styles.css' %}">
+  <link rel="stylesheet" type="text/css" href="{%static 'finder/css/bootstrap.min.css' %}">
+  <link href="{% static 'finder/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+      <div class="card card-register mx-auto mt-5">
+        <div class="card-header">Register Your Hospital</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="name" class="form-control" placeholder="Hospital's Name" required="required">
+                <label for="hospitalname">Name</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="inputCounty" class="form-control" placeholder="Nairobi County" required="required">
+                <label for="inputCounty">County</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="inputContactnumber" class="form-control" placeholder="077777777" required="required">
+                <label for="inputContactnumber">Contact Number</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="emailaddress" class="form-control" placeholder="email@example.com" required="required">
+                <label for="emailaddress">Email Address</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+                    <label for="inputPassword">Password</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required="required">
+                    <label for="confirmPassword">Confirm password</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                   <select class="form-control form-control-lg">
+                         <option>--Select level--</option>
+                         <option>Dispensary</option>
+                         <option>Clinic</option>
+                         <option>level 3</option>
+                         <option>level 4</option>
+                         <option>level 5</option>
+                         <option>level 6</option>
+                        
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <select class="form-control form-control-lg">
+                         <option>--Select type--</option>
+                         <option>Public</option>
+                         <option>Private</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="InputCity" class="form-control" placeholder="Nairobi" required="required">
+                    <label for="inputCity">City</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="InputCountry" class="form-control" placeholder="Kenya" required="required">
+                    <label for="inputCountry">Country</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-block" href="login.html">Register</a>
+          </form>
+          <div class="text-center">
+            <a class="d-block small mt-3" href="login.html">Login Page</a>
+            <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{%static 'finder/static/finder/jquery.min.js' %}"></script>
+  <script src="{%static 'finder/static/finder/bootstrap.min.js' %}"></script>
+     </body>
+     </html>
